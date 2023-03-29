@@ -2,7 +2,7 @@
 
 from typing import Callable
 
-from libdyson import (
+from .libdyson_local import (
     DysonPureCoolLink,
     DysonPureHotCoolLink,
     DysonPureHumidifyCool,
@@ -10,7 +10,7 @@ from libdyson import (
     HumidifyOscillationMode,
     WaterHardness,
 )
-from libdyson.const import AirQualityTarget
+from .libdyson_local.const import AirQualityTarget
 
 from homeassistant.components.select import SelectEntity
 from homeassistant.config_entries import ConfigEntry

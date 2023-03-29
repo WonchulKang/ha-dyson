@@ -6,7 +6,7 @@ from functools import partial
 import logging
 from typing import List, Optional
 
-from libdyson import (
+from .libdyson_local import (
     Dyson360Eye,
     Dyson360Heurist,
     DysonPureHotCool,
@@ -16,9 +16,9 @@ from libdyson import (
     MessageType,
     get_device,
 )
-from libdyson.discovery import DysonDiscovery
-from libdyson.dyson_device import DysonDevice
-from libdyson.exceptions import DysonException
+from .libdyson_local.discovery import DysonDiscovery
+from .libdyson_local.dyson_device import DysonDevice
+from .libdyson_local.exceptions import DysonException
 
 from homeassistant.components.zeroconf import async_get_instance
 from homeassistant.config_entries import ConfigEntry

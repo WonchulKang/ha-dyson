@@ -2,7 +2,7 @@
 
 from typing import Callable, Union
 
-from libdyson import (
+from .libdyson_local import (
     Dyson360Eye,
     Dyson360Heurist,
     DysonDevice,
@@ -10,7 +10,7 @@ from libdyson import (
     DysonPureHumidifyCool,
     DysonPurifierHumidifyCoolFormaldehyde,
 )
-from libdyson.const import MessageType
+from .libdyson_local.const import MessageType
 
 from homeassistant.components.sensor import SensorDeviceClass, SensorStateClass, SensorEntity
 from homeassistant.config_entries import ConfigEntry

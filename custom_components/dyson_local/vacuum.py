@@ -2,7 +2,7 @@
 
 from typing import Any, Callable, List, Mapping
 
-from libdyson import (
+from .libdyson_local import (
     Dyson360Eye,
     VacuumEyePowerMode,
     VacuumHeuristPowerMode,

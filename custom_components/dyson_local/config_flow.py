@@ -4,10 +4,10 @@ import logging
 import threading
 from typing import Optional
 
-from libdyson import DEVICE_TYPE_NAMES, get_device, get_mqtt_info_from_wifi_info
-from libdyson.cloud import DysonDeviceInfo
-from libdyson.discovery import DysonDiscovery
-from libdyson.exceptions import (
+from .libdyson_local import DEVICE_TYPE_NAMES, get_device, get_mqtt_info_from_wifi_info
+from .libdyson_local.cloud import DysonDeviceInfo
+from .libdyson_local.discovery import DysonDiscovery
+from .libdyson_local.exceptions import (
     DysonException,
     DysonFailedToParseWifiInfo,
     DysonInvalidCredential,
